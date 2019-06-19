@@ -18,7 +18,8 @@
             <div class="card-header text-center">
                 <h1>Data Mahasiswa</h1>
                 @if (session('status'))
-                <div class="alert alert-success">
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
                     {{ session('status') }}
                 </div>
                 @endif
