@@ -38,3 +38,7 @@ Route::get('contact','kompensasiController@contact');
 
 Route::get('/siswa', 'SiswaController@index');
 Route::get('/siswa/export_excel', 'SiswaController@export_excel');
+
+Route::get('/session/tampil','TesController@tampilkanSession');
+Route::get('/session/buat','TesController@buatSession');
+Route::get('/session/hapus','TesController@hapusSession');

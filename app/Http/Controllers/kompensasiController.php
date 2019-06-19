@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 use App\datamahasiswa;
 use File;
@@ -26,6 +27,7 @@ class kompensasiController extends Controller
         // $datamahasiswa = datamahasiswa::all()->where('kelas','=','IK2A');
         // $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->get();
         $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->Paginate(5);
+        
         return view('pages.ik2a', ['datamahasiswa' => $datamahasiswa]);
     }
     public function ik2b(){
