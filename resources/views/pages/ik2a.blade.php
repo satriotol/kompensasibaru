@@ -42,7 +42,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @php $i=1 @endphp
                             @foreach($datamahasiswa as $p)
                             <tr>
                                 <td>

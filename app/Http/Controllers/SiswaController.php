@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 use App\datamahasiswa;
+use File;
 
 use App\Exports\datamahasiswaExport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -14,7 +16,8 @@ class SiswaController extends Controller
 {
 	public function index()
 	{
-		$datamahasiswa = datamahasiswa::all();
+		// $datamahasiswa = datamahasiswa::all();
+        $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->get();
 		return view('pages.siswa',['datamahasiswa'=>$datamahasiswa]);
 	}
 
