@@ -82,25 +82,39 @@
                 CONTACT
             </h1>
             <hr class="contact_hr">
-            <form action="">
-                <div class="form-group">
-                    <label for="">Nama</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">E-Mail</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Pesan</label>
-                    <textarea class="form-control" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <input class="btn btn-primary" type="submit" value="Kirim">
-                </div>
-            </form>
+            <div class="row">
+                <form class="offset-md-3 col-md-6" action="">
+                    <div class="form-group">
+                        <label for="">Nama</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-Mail</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Pesan</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <input class="btn btn-primary" type="submit" value="Kirim">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
+
+    <footer class="text-center">
+        <nav class="navbar navbar-expand-lg navbar-default" style="background-color:#05123f">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/bahan/logo-polines.png" alt="">
+                    |
+                    PORTAL MAHASISWA
+                </a>
+            </div>
+        </nav>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
