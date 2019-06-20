@@ -42,3 +42,5 @@ Route::get('/siswa/export_excel', 'SiswaController@export_excel');
 Route::get('/session/tampil','TesController@tampilkanSession');
 Route::get('/session/buat','TesController@buatSession');
 Route::get('/session/hapus','TesController@hapusSession');
+
+Route::get('/kirimemail','MalasngodingController@index');
