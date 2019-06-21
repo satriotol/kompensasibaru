@@ -3,46 +3,58 @@ nav img {
     width: 35px;
 }
 
-nav img{
+nav img {
     margin-bottom: 3px;
 }
 
 a.navbar-brand {
     color: white;
 }
-a.nav-link{
+
+a.nav-link {
     color: white;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* akhir navbar */
 
-.jumbotron{
+.jumbotron {
     margin-top: 64px;
     margin-bottom: 0px;
 }
 
 /* awal about */
-.about{
+.about {
     margin-top: 50px;
     margin-bottom: 60px;
 }
-hr{
+
+hr {
     width: 100px;
-    border-top: 4px solid #05123f ;
+    border-top: 4px solid #05123f;
 }
+
 /* akhir about */
-.contact{
+.contact {
     margin-top: 100px;
     background-color: #081c64;
     color: white;
 }
-.contact_hr{
+
+.contact_hr {
     width: 100px;
     border-top: 4px solid white;
 }
+
 /* footer */
-.card{
+.card {
     background-color: #05123f;
     color: white;
 }
-

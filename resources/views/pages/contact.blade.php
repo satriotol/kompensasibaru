@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/home.css">
-
+    <link rel="shortcut icon" href="/bahan/logo-polines.png" />
     <title>Portal Mahasiswa</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-default fixed-top" style="background-color:#05123f">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="/bahan/logo-polines.png" alt="">
-                    |
-                    PORTAL MAHASISWA
-                </a>
-            </div>
-            <div>
+            <a class="navbar-brand" href="#">
+                <img src="/bahan/logo-polines.png" alt="">
+                |
+                PORTAL MAHASISWA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
