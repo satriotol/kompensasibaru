@@ -37,7 +37,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">IK-1A</a>
                             <a class="dropdown-item" href="#">IK-1B</a>
-                            <a class="dropdown-item" href="#">IK-2A</a>
+                            <a class="dropdown-item" href="/ik2a">IK-2A</a>
                             <a class="dropdown-item" href="#">IK-2B</a>
                             <a class="dropdown-item" href="#">IK-3A</a>
                             <a class="dropdown-item" href="#">IK-3B</a>
@@ -64,14 +64,25 @@
                 ABOUT
             </h1>
             <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem est hic, saepe aliquam ad
-                odit
-                provident cupiditate laboriosam harum ipsam alias velit consectetur quasi illo, repellendus distinctio
-                magnam ipsa.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita modi labore praesentium ullam
-                voluptatibus
-                porro error minus molestias autem. Enim cupiditate ducimus amet ea consequuntur facere eligendi unde
-                molestias porro.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+                        exercitationem est hic, saepe aliquam ad
+                        odit
+                        provident cupiditate laboriosam harum ipsam alias velit consectetur quasi illo, repellendus
+                        distinctio
+                        magnam ipsa.</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita modi
+                        labore praesentium ullam
+                        voluptatibus
+                        porro error minus molestias autem. Enim cupiditate ducimus amet ea consequuntur facere
+                        eligendi
+                        unde
+                        molestias porro.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -86,15 +97,15 @@
                 <form class="offset-md-3 col-md-6" action="">
                     <div class="form-group">
                         <label for="">Nama</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="masukkan nama...">
                     </div>
                     <div class="form-group">
                         <label for="">E-Mail</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="masukkan email...">
                     </div>
                     <div class="form-group">
                         <label for="">Pesan</label>
-                        <textarea class="form-control" rows="5"></textarea>
+                        <textarea class="form-control" rows="5" placeholder="masukan isi pesan..."></textarea>
                     </div>
                     <div class="form-group text-center">
                         <input class="btn btn-primary" type="submit" value="Kirim">
@@ -104,17 +115,18 @@
         </div>
     </section>
 
-    <footer class="text-center">
-        <nav class="navbar navbar-expand-lg navbar-default" style="background-color:#05123f">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/bahan/logo-polines.png" alt="">
-                    |
-                    PORTAL MAHASISWA
-                </a>
-            </div>
-        </nav>
-    </footer>
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title">PORTAL MAHASISWA</h5>
+            <p class="card-text offset-md-3 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                aperiam labore a eius,
+                earum accusantium odio magni delectus distinctio numquam dolorem pariatur exercitationem modi laudantium
+                et? Inventore vitae perspiciatis pariatur?</p>
+        </div>
+        <div class="card-footer text-muted">
+            &copy; Dibuat Oleh Satrio Jati Wicaksono
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

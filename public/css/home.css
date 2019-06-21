@@ -40,5 +40,9 @@ hr{
     width: 100px;
     border-top: 4px solid white;
 }
-
+/* footer */
+.card{
+    background-color: #05123f;
+    color: white;
+}
 
