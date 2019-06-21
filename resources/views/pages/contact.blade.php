@@ -26,8 +26,8 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
