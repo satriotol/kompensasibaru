@@ -1,8 +1,6 @@
 @extends('layouts.default')
 @section('content')
-<style>
-
-</style>
+<link rel="stylesheet" href="../css/style.css">
 
 <body class="container-form">
     <style type="text/css">
