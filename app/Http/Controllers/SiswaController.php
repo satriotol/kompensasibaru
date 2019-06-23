@@ -25,4 +25,15 @@ class SiswaController extends Controller
 	{
 		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
 	}
+	public function indexik2b()
+	{
+		// $datamahasiswa = datamahasiswa::all();
+        $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2B')->get();
+		return view('pages.siswaik2b',['datamahasiswa'=>$datamahasiswa]);
+	}
+
+	public function export_excelik2b()
+	{
+		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
+	}
 }
