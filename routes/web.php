@@ -45,9 +45,6 @@ Route::group(['middleware' => ['auth']], function() {
 });
 Route::get('/','kompensasiController@home');
 
-
-
-
 Route::get('/session/tampil','TesController@tampilkanSession');
 Route::get('/session/buat','TesController@buatSession');
 Route::get('/session/hapus','TesController@hapusSession');
