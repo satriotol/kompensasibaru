@@ -15,6 +15,7 @@
         <div class="card mt-5">
             <div class="card-header text-center">
                 <h1>Data Mahasiswa</h1>
+
                 @if (session('status'))
                 <div class="alert alert-success alert-block">
                     <button type="button" class="close" data-dismiss="alert">×</button>
@@ -24,7 +25,7 @@
                 <div class="card-body">
                     <a href="/tambah" class="btn btn-primary">Input Data Baru</a>
                     |
-                    <a href="/siswa" class="btn btn-success">Cetak</a>
+                    <a href="/cetak" class="btn btn-success">Cetak</a>
                     <br />
                     <br />
                     <div class="table-responsive">

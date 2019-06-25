@@ -14,6 +14,10 @@ use App\Http\Controllers\Controller;
 
 class SiswaController extends Controller
 {
+	public function cetak()
+	{
+		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
+	}
 	public function index()
 	{
 		// $datamahasiswa = datamahasiswa::all();
