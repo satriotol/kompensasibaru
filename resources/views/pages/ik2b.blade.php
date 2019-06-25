@@ -22,8 +22,8 @@
                 @endif
                 <div class="card-body">
                     <a href="/tambah" class="btn btn-primary">Input Data Baru</a>
-                    |
-                    <a href="/siswaik2b" class="btn btn-success">Cetak</a>
+                    {{-- |
+                    <a href="/siswaik2b" class="btn btn-success">Cetak</a> --}}
                     <br />
                     <br />
                     <div class="table-responsive">

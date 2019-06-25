@@ -8,7 +8,7 @@
         <h1>PORTAL MAHASISWA</h1>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h1 class="text-center">
                 ABOUT
