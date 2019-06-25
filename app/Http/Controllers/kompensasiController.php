@@ -21,6 +21,15 @@ class kompensasiController extends Controller
     public function header(){
         return view('includes.header');
     }
+    public function ik(){
+        // $datamahasiswa = datamahasiswa::all()->sortBy('nama');
+        // $datamahasiswa = datamahasiswa::all()->sortByDesc('nama');     
+        // $datamahasiswa = datamahasiswa::all()->where('kelas','=','IK2A');
+        // $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->get();
+        $datamahasiswa = datamahasiswa::orderBy('kelas', 'ASC')->orderBy('nama', 'ASC')->Paginate(5);
+        
+        return view('pages.ik2a', ['datamahasiswa' => $datamahasiswa]);
+    }
     public function ik2a(){
         // $datamahasiswa = datamahasiswa::all()->sortBy('nama');
         // $datamahasiswa = datamahasiswa::all()->sortByDesc('nama');     

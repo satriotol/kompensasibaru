@@ -24,6 +24,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth']], function() {
     Route::get('header','kompensasiController@header');
+    Route::get('/ik','kompensasiController@ik');
     Route::get('/ik2a','kompensasiController@ik2a');
     Route::get('/ik2b','kompensasiController@ik2b');
     Route::get('tambah','kompensasiController@tambah');

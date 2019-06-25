@@ -20,6 +20,7 @@
                         Data Mahasiswa
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/ik">Semua Siswa</a>
                         <a class="dropdown-item" href="#">IK-1A</a>
                         <a class="dropdown-item" href="#">IK-1B</a>
                         <a class="dropdown-item" href="/ik2a">IK-2A</a>
