@@ -37,13 +37,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('about','kompensasiController@about');
     Route::get('projects','kompensasiController@projects');
     Route::get('/cetak', 'SiswaController@cetak');
-    Route::get('/siswa/export_excel', 'SiswaController@export_excel');
-    Route::get('/siswa', 'SiswaController@index');
-    Route::get('/siswaik2b', 'SiswaController@indexik2b');
-    Route::get('/siswa/export_excel', 'SiswaController@export_excel');
-    Route::get('/siswaik2b/export_excel', 'SiswaController@export_excelik2b');
+    Route::post('/import_excel', 'SiswaController@import_excel');
 });
-Route::get('/','kompensasiController@home');
+// Route::get('/','kompensasiController@home');
+Route::get('/','transaksiController@home');
 
 Route::get('/session/tampil','TesController@tampilkanSession');
 Route::get('/session/buat','TesController@buatSession');

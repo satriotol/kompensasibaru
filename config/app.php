@@ -160,6 +160,7 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
+        //selanjutnya kita deklarasikan package laravel excel ini dengan menambahkan ServiceProvider nya di config/app.php.
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
@@ -226,6 +227,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        // tambahkan juga Facade nya di config/app.php. agar package laravel excel ini terbaca di proyek laravel kita
+        // 'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
 
     ],
 

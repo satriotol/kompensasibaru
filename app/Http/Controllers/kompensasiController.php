@@ -12,9 +12,6 @@ use File;
 
 class kompensasiController extends Controller
 {
-    public function login(){
-        return view('login');
-    }   
     public function home(){
         return view('pages.home');
     }
@@ -26,6 +23,7 @@ class kompensasiController extends Controller
         // $datamahasiswa = datamahasiswa::all()->sortByDesc('nama');     
         // $datamahasiswa = datamahasiswa::all()->where('kelas','=','IK2A');
         // $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->get();
+        		// validasi
         $datamahasiswa = datamahasiswa::orderBy('kelas', 'ASC')->orderBy('nama', 'ASC')->paginate(5);
         return view('pages.ik', ['datamahasiswa' => $datamahasiswa]);
     }
@@ -74,7 +72,6 @@ class kompensasiController extends Controller
             'foto' => $nama_file,
         ]);
         return redirect('/ik2a')->with('status', 'Data Berhasil Ditambahkan!');
-        // return redirect()->back();
 
     }
     public function edit($id)

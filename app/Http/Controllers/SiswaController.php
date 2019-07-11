@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\datamahasiswa;
 use File;
 
+use App\Imports\datamahasiswaImport;
 use App\Exports\datamahasiswaExport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
@@ -18,26 +19,15 @@ class SiswaController extends Controller
 	{
 		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
 	}
-	public function index()
+	public function import_excel(Request $request) 
 	{
-		// $datamahasiswa = datamahasiswa::all();
-        $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2A')->get();
-		return view('pages.siswa',['datamahasiswa'=>$datamahasiswa]);
-	}
-
-	public function export_excel()
-	{
-		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
-	}
-	public function indexik2b()
-	{
-		// $datamahasiswa = datamahasiswa::all();
-        $datamahasiswa = datamahasiswa::orderBy('nama', 'asc')->where('kelas','=','IK2B')->get();
-		return view('pages.siswaik2b',['datamahasiswa'=>$datamahasiswa]);
-	}
-
-	public function export_excelik2b()
-	{
-		return Excel::download(new datamahasiswaExport, 'datamahasiswa.xlsx');
+		$this->validate($request, [
+			'file' => 'required|mimes:csv,xls,xlsx'
+		]);
+		$file = $request->file('file');
+		$nama_file = rand().$file->getClientOriginalName();
+		$file->move('data_file',$nama_file);
+		Excel::import(new datamahasiswaImport, public_path('/data_file/'.$nama_file));
+		return redirect('/ik')->with('status', 'Data Berhasil Ditambahkan!');
 	}
 }

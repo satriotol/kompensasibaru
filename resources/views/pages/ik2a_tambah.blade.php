@@ -89,7 +89,7 @@
                     <div class="form-group text-center">
                         <input type="submit" class="btn btn-success" value="Simpan">
                         |
-                        <a href="/ik2a" class="btn btn-danger"  onclick="return confirm('Anda yakin ingin untuk membatalkan input data?')">Batal</a>
+                        <a href="/ik" class="btn btn-danger"  onclick="return confirm('Anda yakin ingin untuk membatalkan input data?')">Batal</a>
                     </div>
                 </form>
             </div>
